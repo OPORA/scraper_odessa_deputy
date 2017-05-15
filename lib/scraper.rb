@@ -66,7 +66,7 @@ class ScrapeMp
     elsif full_name == "Боровик Александр"
       party = "Внефракционный депутат"
     elsif full_name == "Потапский Алексей Юрьевич"
-      party = "БЛОК ПЕТРА ПОРОШЕНКО СОЛИДАРНОСТЬ"
+      party = "Внефракционный депутат"
     else
       paragraf = page_mp.css('.shortText b span span').text.split(',').first[/(«|").*(»|")/].gsub(/(«|»|")/,'')
       party = case
